@@ -40,7 +40,10 @@ int main(int argc, char** argv)
 
   /// Show your results
   cout<<circles.size()<<endl;
+  imwrite("../houghcircles.jpg",src);
+
   namedWindow( "Hough Circle Transform Demo", CV_WINDOW_AUTOSIZE );
+  
   imshow( "Hough Circle Transform Demo", src );
 
   waitKey(0);

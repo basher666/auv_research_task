@@ -57,10 +57,10 @@ int main(int argc, char ** argv)
 
   normalize(magI, magI, 0, 1, CV_MINMAX); // Transform the matrix with float values into a
   // viewable image form (float between values 0 and 1).
-
+  imwrite("../fourier_spectrum.jpg",magI);
+  
   imshow("Input Image"       , I   );    // Show the result
   imshow("spectrum magnitude", magI);
   waitKey();
-
   return 0;
 }

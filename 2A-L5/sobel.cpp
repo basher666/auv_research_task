@@ -49,6 +49,8 @@ int main( int argc, char** argv )
   /// Total Gradient (approximate)
   addWeighted( abs_grad_x, 0.5, abs_grad_y, 0.5, 0, grad );
 
+  imwrite("../grad.jpg",grad);
+  
   imshow( window_name, grad );
 
   waitKey(0);

@@ -19,7 +19,7 @@ int main()
   dst.create(result_rows,result_cols,CV_32FC1);
 
   matchTemplate(img,t,dst,CV_TM_CCORR_NORMED);
-
+  imwrite("../dst.jpg",dst);
   imshow("waldo",dst);
   waitKey(0);
 }

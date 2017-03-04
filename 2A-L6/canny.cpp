@@ -32,6 +32,8 @@ void CannyThreshold(int, void*)
 
   src.copyTo( dst, detected_edges);
   imshow( window_name, dst );
+  imwrite("../canny.jpg",dst);
+  waitKey(50);
 }
 
 
@@ -61,6 +63,7 @@ int main( int argc, char** argv )
 
   /// Wait until user exit program by pressing a key
   waitKey(0);
+
 
   return 0;
 }
